@@ -1,0 +1,239 @@
+<html></html>
+    <head>
+        <title>Background check</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+
+<body>
+<style>@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #5ec94f;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 64%;
+    width: 132px;
+    height: 132px;
+    bottom: -132px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 45%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 5s;
+}
+.background li:nth-child(2) {
+    left: 86%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 2s;
+}
+.background li:nth-child(3) {
+    left: 82%;
+    width: 178px;
+    height: 178px;
+    bottom: -178px;
+    animation-delay: 14s;
+}
+.background li:nth-child(4) {
+    left: 75%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 1s;
+}
+.background li:nth-child(5) {
+    left: 48%;
+    width: 135px;
+    height: 135px;
+    bottom: -135px;
+    animation-delay: 11s;
+}
+.background li:nth-child(6) {
+    left: 10%;
+    width: 230px;
+    height: 230px;
+    bottom: -230px;
+    animation-delay: 6s;
+}
+.background li:nth-child(7) {
+    left: 5%;
+    width: 148px;
+    height: 148px;
+    bottom: -148px;
+    animation-delay: 32s;
+}
+.background li:nth-child(8) {
+    left: 65%;
+    width: 203px;
+    height: 203px;
+    bottom: -203px;
+    animation-delay: 8s;
+}
+.background li:nth-child(9) {
+    left: 33%;
+    width: 206px;
+    height: 206px;
+    bottom: -206px;
+    animation-delay: 16s;
+}
+
+div {
+    position: relative;
+    z-index: 9;
+}
+
+h1 {
+    font-size: 11vw;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+h3 {
+    font-size: 4vw;
+    padding-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.container {
+    padding-left: 5vw;
+    margin-top: 3vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: calc(15px + 0.390625vw);
+    font-family: Calibri, Helvetica;
+
+}
+
+.ikonka {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.divider {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divider svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 150px;
+}
+
+.divider .shape-fill {
+    fill: #000000;
+}
+</style>
+
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+
+<div class="container">
+    <div style="font-family: Calibri, Helvetica; color: black">
+        <h1>Sustainable Web Design Laboratory</h1>
+        <h2>Piotr Krzciuk</h2>
+        <div class="ikonka" style="margin-right: 1vw"><a href="mailto:greener@data.pl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34"><path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z"/></svg></a></div>
+        <div class="ikonka"><a href="https://linkedin.com/in/piotrkrzciuk"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 25 25"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a></div>
+    </div>
+    <div>
+        <h3>I'm on a mission to make the Web greener. <br>So, how green is your website?</h3>
+        <p>---> <a href="https://www.ecograder.com" rel="nofollow" style="color: black">Measure your digital carbon footprint using Ecograder</a><br>
+        <br>---> Order a full website audit
+        <h3>Let's make your website sustainable!</h3>
+            <ul>
+                <li>Full website audit - <strong>web performance & digital carbon footprint audit</strong></li>
+                <li>Website optimization - including compressing your images in new image formats, setting cache, moving the website to green hosting and implementing Content Delivery Network</li>
+            </ul>
+        <h3>Also consider:</h3>
+        <ul>
+            <li>
+                <strong>Search Engine Optimization</strong> - improve your website ranking in Google and Bing - onsite, offsite, technical SEO
+            </li>
+            <li>
+                <strong>Content marketing</strong> - lightweight lead magnets, quizes, articles
+            </li>
+            <li>
+                <strong>Local marketing</strong> - advertise your business on Google Maps
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="divider" style="margin-bottom: -21">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div class="footer">
+    <p style="color: white; text-align: center; vertical-align: middle; line-height: 200px">&copy; 2024 Piotr Krzciuk - Sustainable Web Design Laboratory</p>
+</div>
+</body>
+</html>

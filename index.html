@@ -183,6 +183,31 @@ body {
 .divider .shape-fill {
     fill: #000000;
 }
+#order {
+    width: 50vw;
+}
+#order input, textarea{
+    width: 50vw;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+#order label{
+    font-weight: 800;
+}
+input[type=submit] {
+  background-color: black; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px; 
+  text-transform: uppercase; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+input[type=submit]:hover {
+  background-color: green; 
+}
+
 </style>
 
 <ul class="background">
@@ -208,7 +233,7 @@ body {
     <div>
         <h3>I'm on a mission to make the Web greener. <br>So, how green is your website?</h3>
         <p>---> <a href="https://www.ecograder.com" rel="nofollow" style="color: black">Measure your digital carbon footprint using Ecograder</a><br>
-        <br>---> Order a full website audit
+        <br>---> <a href="#order">Order a free basic website audit</a>
         <h3>Let's make your website sustainable!</h3>
             <ul>
                 <li>Full website audit - <strong>web performance & digital carbon footprint audit</strong></li>
@@ -226,6 +251,25 @@ body {
                 <strong>Local marketing</strong> - advertise your business on Google Maps
             </li>
         </ul>
+        <h3>Order your free basic website audit:</h3>
+        <div id="order">
+        
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" /><br>
+            <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" placeholder="john@gmail.com" /><br>
+            <label for="message">Website:</label>
+        <textarea id="message" name="message" placeholder="https://www.example.com"></textarea><br>
+        <input type="text" name="honeypot" style="display:none" />
+        <input type="hidden" name="accessKey" value="1dc41eab-fb18-4b84-9c3b-46cb085b63ff" />
+        <input type="hidden" name="subject" value="Contact - Sustainable Web Design" />
+        <input type="hidden" name="replyTo" value="@" />
+        <input type="submit" value="Let's make it green!" />
+        </form>
+        
+        </div>
+
     </div>
 </div>
 <div class="divider" style="margin-bottom: -21px">
